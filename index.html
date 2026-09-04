@@ -1,31 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Win Sivers</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script> 
-</head>	
+<script src="script.js" defer></script>
+</head>
 <body>
 <nav id="navbar"></nav>
-<script>
-fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
-</script>
+<script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
 <h1>
-	Win Sivers
+Win Sivers
 </h1>
 
 <p>
-	Hi, I am Win Sivers.
-	I am a 14 year old boy living in New Zealand.
-	This website will be about things I have created, such as philosophical ideas, sewing, etc.
+Hi, I am Win Sivers.
+I am a 14 year old boy living in New Zealand.
+This website will be about things I have created, such as philosophical ideas, sewing, etc.
 </p>
 
 <img src="images/eyeball.jpg" width="300" alt="A photo of the eye of the websites creator.">
 
 <p>
-	<a href="made.html">This</a> is what I have made so far.
+<a href="made.html">This</a> is what I have made so far.
 </p>
 
 <h2>

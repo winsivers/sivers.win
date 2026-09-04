@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Made by Win Sivers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mini articles</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 <nav id="navbar"></nav>
-<script>
-fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
-</script>
+<script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
 <h2>Mini-Articles</h2>
 
-<b>These are a collection of smaller thoughts or ideas that I would like to share.</b>
-
+<p>These are a collection of smaller thoughts or ideas that I would like to share.</p>
+<hr>
 
 <p> The cause of hatred is a question I have been thinking about for years and still don't have an answer to. I think I have gotten close with some aspects.
 I think much of the time we hate specific aspects about people, it's because those are aspects of ourselves we either hate or are trying to get rid of.

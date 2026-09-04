@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>going outside</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 <nav id="navbar"></nav>
-<script>
-fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
-</script>
+<script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
 <h2>Going outside.</h2>
 <p>I think a lot of people my age stay inside too much. I like the indoors too, but the only opportunities indoors are online, whereas from my experience, you need a combination, a balance,
@@ -23,4 +22,3 @@ however, it cuts you off from meeting new people in your community and is less h
 </main>
 </body>
 </html>
-

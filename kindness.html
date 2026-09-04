@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Made by Win Sivers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kindness</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 <nav id="navbar"></nav>
-<script>
-fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
-</script>
+<script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
 <h2>Kindness</h2>
 <p>This is my favorite social strategy to make friends. That I think more teenagers need to know, trying your best to just be nice to everyone,

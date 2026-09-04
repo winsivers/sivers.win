@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"> 
-<title>Daily Life</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Win Sivers /now</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script> 
-</head>	
+<script src="script.js" defer></script>
+</head>
 <body>
 <nav id="navbar"></nav>
-<script>
-fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
-</script>
+<script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
 
 <h1>What Am I Doing Now?</h1>
