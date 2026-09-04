@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>Daily Life</title>
+	<link rel="stylesheet" href="style.css">
+</head>	
+<body>
+<nav id="navbar"></nav>
+<script>
+fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
+</script>
+<main>
+<h1>
+	<a href="index.html">My Daily Life</a>
+</h1>
+
+<p> Today 01.10.25, I am having a great day I found a 300 dollar fancy baseball racket in an old house my dad got along with some big artwork from a movie. Then I had an interview with <a href="https://www.scotscollege.school.nz/">Scots College</a> and got accepted. I am extremely excited to go the man interviewing me said he liked that I was wearing a suit and I was looking sharp. I really liked that compliment because while I didn't make it, I sewed the inside pockets and had ironed my suit the night before and learned how to tie a tie again. I used to be able to tie a tie but then I forgot. I am now very happy to be going soon!
+</p>
+
+<img src="images/outofafrica.jpg" alt="Some artwork from the film Out Of Africa.">
+<img src="images/tennis.png" class="noborder" alt="A fancy tennis racket">
+
+
+</main>
+</body>
+</html>

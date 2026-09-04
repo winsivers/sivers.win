@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<title>Daily Life</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script> 
+</head>	
+<body>
+<nav id="navbar"></nav>
+<script>
+fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
+</script>
+<main>
+<h1>What Am I Doing Now?</h1>
+<p>
+7/22/26, I am currently living in New Zealand but looking to go to an international boarding school. Generally, I am spending most of my time reading,
+cycling, and thinking about the world. I am also doing a few community projects. One of them is for school, and the other two are raising awareness
+for charities and local wildlife that I am doing outside of school.
+
+This page is a now page. Go see more at <a href="https://nownownow.com/">nownownow</a>. This is not an advertisement.
+</p>
+<p>_____________________________________________________</p>
+<b> Favorite Books</b>
+<ul>
+<li>48 Laws Of Power by Robert Greene</li>
+<li>How To Win Friends And Influence People by Dale Carnegi</li>
+<li>Anything by Agatha Christie</li>
+<li>Enlightened by Sanchi Ediriweera</li>
+<li>The Art Of Happiness, A Handbook For Living, By the Dalai Lama</li>
+
+<p>   </p>
+
+
+<b>Currently Reading</b>
+<p>Modern Robotics: Mechanics, Planning, and Control by Kevin Lynch and others.</p>
+<p>Review: So far it is super facsinating, I find learning about pistons and joints to be intresting,
+especially with the real world references in the book that let me visualise it.</p>
+
+</main>
+</body>
+</html>

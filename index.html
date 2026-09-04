@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Win Sivers</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script> 
+</head>	
+<body>
+<nav id="navbar"></nav>
+<script>
+fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
+</script>
+<main>
+<h1>
+	Win Sivers
+</h1>
+
+<p>
+	Hi, I am Win Sivers.
+	I am a 14 year old boy living in New Zealand.
+	This website will be about things I have created, such as philosophical ideas, sewing, etc.
+</p>
+
+<img src="images/eyeball.jpg" width="300" alt="A photo of the eye of the websites creator.">
+
+
+
+<p>
+	<a href="made.html">This</a> is what I have made so far.
+</p>
+
+<h2>
+	Favorite Hobbies:
+</h2>
+<ul>
+<li>Sewing</li>
+<li>Writing</li>
+<li>Wood work</li>
+<li>Philophy</li>
+<li>Cycling</li>
+</ul>
+<p>
+I currently go to a school in Wellington. It is very fun, I have many very kind friends and feel
+very at home there. But also very want to travel the world and move new places as soon as possible.
+</p>
+
+</main>
+</body>
+</html>

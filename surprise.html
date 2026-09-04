@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<title>Suprise!</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script> 
+</head>	
+<body>
+<nav id="navbar"></nav>
+<script>
+fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
+</script>
+<main>
+<h1>Congratulations</h1>
+<a href="nav.html" title="nav"></a>
+<p>
+	You have found a special part of the website. Good job. 
+</p>
+<img class="noborder" src="images/yo.png">
+
+</main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>contact Win Sivers</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script> 
+</head>	
+<body>
+<nav id="navbar"></nav>
+<script>
+fetch('nav.html').then(r => r.text()).then(x => {document.getElementById('navbar').innerHTML = x; });
+</script>
+<main>
+<h1>
+	contact Win Sivers
+</h1>
+
+<p>
+Hi! Feel free to write me here! I look forward to hearing from you soon, and I will reply within a few weeks! :)
+</p>
+
+<form action="https://formspree.io/f/xdaqrnrn" method="post">
+<label>Full Name</label>
+<input type="text" name="Name" placeholder="Your name" required>
+<label>Email Address</label>
+<input type="email" name="Email" placeholder="whatever@example.com" required>
+<label>Where are you?</label>
+<input type="text" name="Place of Origin" placeholder="City? Country?">
+<label>Who are you?</label>
+<input type="text" name="Who" placeholder="Student, Job, Etc. ">
+<label>Message</label>
+<textarea name="Message" placeholder="Say hello." required></textarea>
+<input type="hidden" name="_subject" value="New message from sivers.win">
+<button type="submit">Send Message</button>
+</form>
+
+
+</main>
+</body>
+</html>
