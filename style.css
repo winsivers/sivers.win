@@ -1,16 +1,9 @@
-:root {
-  --grid-light: rgba(0,0,0,0.15);
-}
-
 body {
   font-family: Courier New, serif;
   line-height: 1.6em;
   margin: 0;
   color: #B03129;
   background-color: #FFFCF0;
-  position: relative;
-  --scroll-x: 0px;
-  --scroll-y: 0px;
 }
 
 h1, h2 {
@@ -128,22 +121,6 @@ button:hover {
   color: #FAF0E6;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background-image:
-  linear-gradient(to right, var(--grid-light) 1px, transparent 1px),
-  linear-gradient(to bottom, var(--grid-light) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
-  z-index: -1;
-  background-position: var(--scroll-x) var(--scroll-y);
-}
-
 input, label, button {
   display: block;
 }
@@ -152,4 +129,41 @@ input {
 }
 button {
   margin-top: 2em;
+}
+
+.philosophy-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: #FFFCF0;
+}
+
+.philosophy-page::before {
+  content: "";
+  position: fixed;
+  inset: -18px;
+  background: url("images/rollinghills.jpg") center / cover no-repeat;
+  filter: blur(8px);
+  transform: scale(1.04);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.philosophy-page > nav,
+.philosophy-page > main {
+  position: relative;
+  z-index: 1;
+}
+
+.philosophy-page > main {
+  max-width: 36em;
+  line-height: 1.8;
+}
+
+.philosophy-page > main > h1,
+.philosophy-page > main > h2,
+.philosophy-page > main > p,
+.philosophy-page > main > b {
+  background-color: rgba(255, 252, 240, 0.62);
+  padding: 0.15em 0.4em;
+  border-radius: 0.2em;
 }

@@ -6,8 +6,26 @@
 <title>contact Win Sivers</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+<style>
+  .contact-page {
+    min-height: 100vh;
+    background: #FFFCF0 url("images/sunrisehills.jpg") center / cover no-repeat fixed;
+  }
+
+  .contact-page > nav,
+  .contact-page > main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-page > main {
+    max-width: 36em;
+    line-height: 1.8;
+    background-color: rgba(255, 252, 240, 0.62);
+  }
+</style>
 </head>
-<body>
+<body class="contact-page">
 <nav id="navbar"></nav>
 <script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>

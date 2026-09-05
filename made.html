@@ -6,8 +6,33 @@
 <title>Made by Win Sivers</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+<style>
+  .made-page {
+    min-height: 100vh;
+    background: #FFFCF0 url("images/bergenforest.jpg") center / cover no-repeat fixed;
+  }
+
+  .made-page > nav,
+  .made-page > main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .made-page > main {
+    max-width: 36em;
+    line-height: 1.8;
+  }
+
+  .made-page > main > h1,
+  .made-page > main > h2,
+  .made-page > main > p {
+    background-color: rgba(255, 252, 240, 0.62);
+    padding: 0.15em 0.4em;
+    border-radius: 0.2em;
+  }
+</style>
 </head>
-<body>
+<body class="made-page">
 <nav id="navbar"></nav>
 <script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
@@ -29,7 +54,7 @@ It has a very padded strap and a velcro seal. The next one I made as kind of a f
 I used myself meditating and images of my own hands as a reference. </p>
 
 <h2>My photos</h2>
-<img src="images/waves.jpg" alt="Some very prettey waves.">
+<img src="images/waves.jpg" alt="Some very pretty waves.">
 <img src="images/school.jpg" alt="A pretty nice shot of a school.">
 <img src="images/chairs.jpg" alt="An empty train.">
 
@@ -39,7 +64,7 @@ Here are a few photos of the spots I have visited.
 <img src="images/Bike1.jpg" alt="A bike lying on the grass.">
 <img src="images/bike2.jpg" alt="A bike.">
 
-<img src="images/eyeball.jpg" alt="A photo of the eye of the websites creator.">
+<img src="images/eyeball.jpg" alt="A photo of the eye of the website's creator.">
 
 
 <p>And here are some photos I took of ducks.</p>

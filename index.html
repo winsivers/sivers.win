@@ -3,11 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Win Sivers</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <title>Win Sivers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .home-page {
+      min-height: 100vh;
+      background: #FFFCF0 url("images/windmills.jpg") center / cover no-repeat fixed;
+    }
+
+    .home-page > nav,
+    .home-page > main {
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-page > main {
+      max-width: 36em;
+      line-height: 1.8;
+      background-color: rgba(255, 252, 240, 0.62);
+    }
+  </style>
 </head>
-<body>
+<body class="home-page">
 <nav id="navbar"></nav>
 <script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
@@ -21,7 +39,7 @@ I am a 14 year old boy living in New Zealand.
 This website will be about things I have created, such as philosophical ideas, sewing, etc.
 </p>
 
-<img src="images/eyeball.jpg" width="300" alt="A photo of the eye of the websites creator.">
+<img src="images/eyeball.jpg" width="300" alt="A photo of the eye of the website's creator.">
 
 <p>
 <a href="made.html">This</a> is what I have made so far.
@@ -33,8 +51,8 @@ Favorite Hobbies:
 <ul>
 <li>Sewing</li>
 <li>Writing</li>
-<li>Wood work</li>
-<li>Philophy</li>
+<li>Woodwork</li>
+<li>Philosophy</li>
 <li>Cycling</li>
 </ul>
 <p>

@@ -6,8 +6,39 @@
 <title>Win Sivers /now</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+<style>
+  .now-page {
+    min-height: 100vh;
+    background: #FFFCF0 url("images/sunrise.jpg") center / cover no-repeat fixed;
+  }
+
+  .now-page > nav,
+  .now-page > main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .now-page > main {
+    max-width: 36em;
+    line-height: 1.8;
+  }
+
+  .now-page > main > h1,
+  .now-page > main > h2,
+  .now-page > main > p,
+  .now-page > main > ul,
+  .now-page > main > b {
+    background-color: rgba(255, 252, 240, 0.62);
+    padding: 0.15em 0.4em;
+    border-radius: 0.2em;
+  }
+
+  .now-page > main > ul {
+    padding-left: 2em;
+  }
+</style>
 </head>
-<body>
+<body class="now-page">
 <nav id="navbar"></nav>
 <script>fetch('nav.html').then(response => response.text()).then(nav => { document.getElementById('navbar').innerHTML = nav; });</script>
 <main>
@@ -24,7 +55,7 @@ This page is a now page. Go see more at <a href="https://nownownow.com/">nownown
 <h2> Favorite Books</h2>
 <ul>
 <li>48 Laws Of Power by Robert Greene</li>
-<li>How To Win Friends And Influence People by Dale Carnegi</li>
+<li>How To Win Friends And Influence People by Dale Carnegie</li>
 <li>Anything by Agatha Christie</li>
 <li>Enlightened by Sanchi Ediriweera</li>
 <li>The Art Of Happiness, A Handbook For Living, By the Dalai Lama</li>
@@ -32,7 +63,7 @@ This page is a now page. Go see more at <a href="https://nownownow.com/">nownown
 
 <b>Currently Reading</b>
 <p>Modern Robotics: Mechanics, Planning, and Control by Kevin Lynch and others.</p>
-<p>Review: So far it is super facsinating, I find learning about pistons and joints to be intresting,
+<p>Review: So far it is super fascinating; I find learning about pistons and joints to be interesting,
 especially with the real world references in the book that let me visualise it.</p>
 
 </main>
